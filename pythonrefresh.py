@@ -32,13 +32,22 @@ formatted = longer_phrase.format("Mohammed", "Wednesday")
 
 #Getting User Input
 name = input("Enter your name?")
-print("Hi",name)
+#print("Hi",name)
 
 #Lists, tuples and sets
 l  = ["Mohd", "Mudathir", "ALi"] # can be changed, maintain order & allow duplicates
 t  = ("Mohd", "Mudathir", "ALi") # can not be changed, maintain order & allow duplicates
 s  = {"Mohd", "Mudathir", "ALi"} # can be changed, doesn't maintain order & doesn't allow duplicates
 
-l.append("mahi")
-t.append("mahi")
+l.append("mahi") # can't add to tuble
 s.add("mahi")
+
+#Advanced set operations difference, union and intersection
+art = {"Ahmed", "Jon", "Lily", "Han"}
+science = {"Khalid", "Omer" "Jon", "Lily", "Han"}
+dif  = art.difference(science)
+all  = art.union(science)
+both = art.intersection(science)
+print(dif)
+print(all)
+print(both)
