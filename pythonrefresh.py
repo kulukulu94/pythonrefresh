@@ -34,5 +34,11 @@ formatted = longer_phrase.format("Mohammed", "Wednesday")
 name = input("Enter your name?")
 print("Hi",name)
 
+#Lists, tuples and sets
+l  = ["Mohd", "Mudathir", "ALi"] # can be changed, maintain order & allow duplicates
+t  = ("Mohd", "Mudathir", "ALi") # can not be changed, maintain order & allow duplicates
+s  = {"Mohd", "Mudathir", "ALi"} # can be changed, doesn't maintain order & doesn't allow duplicates
 
-
+l.append("mahi")
+t.append("mahi")
+s.add("mahi")
