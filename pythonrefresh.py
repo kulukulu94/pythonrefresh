@@ -62,7 +62,7 @@ both = art.intersection(science)
 #is key word checks if the elements are exactly the same thing not ust they have the same elements/values
 
 #if statements 
-
+''' 
 day_of_week = input("what day of the week is it today?").lower()
 
 if day_of_week == "monday":
@@ -87,9 +87,9 @@ if user_movie in watched_movies:
     print(f"I have watched {user_movie} too!")
 else:
     print("I have not watched that yet!")    
-     
+      '''
 ####
-number = 7
+''' number = 7
 user_input = input("Enter 'y' if you would like to play: ").lower()
 
 if user_input == 'y':#it can be user in ("y", "Y")
@@ -100,3 +100,48 @@ if user_input == 'y':#it can be user in ("y", "Y")
         print("You were off by one.")
     else:
         print("sorry, it's wrong!")      
+ '''
+#loops while, 
+''' 
+
+while True:
+    number = 10
+    user_input = input("Enter 'y' if you would like to play? (Y/n): ")#Y/n common naming convention
+    
+    if user_input == "n":
+        break
+    
+    user_number = int(input("Guess our number: "))
+    if user_number == number:
+        print("You guessed correctly")
+    elif abs(number - user_number) == 1:#can be (number - user_number) in (1, -1)
+        print("You were off by one.")
+    else:
+        print("sorry, it's wrong!")      
+         '''
+
+''' #loops, for
+friends = ["Rolf", "Jon", "Bon"]
+
+for friend in friends:
+    print (f"{friend} is my friend.")
+   '''  
+''' #sum, len
+grades = [25,54, 66, 77]
+total  = sum(grades)
+amount  = len(grades)
+print(total/amount)   
+ '''
+''' #list comprehension
+friends = ["Rolf", "Sam", "Samantha", "sony", "Jon"]
+starts_s = [friend for friend in friends if friend.startswith("S") ]
+print(starts_s)
+
+ '''
+# dictionaries python dictionaries similar to php associative arrays
+student_attendance = {"Jon": 90, "Elly":30, "Mark": 44}
+for student, attendance in student_attendance.items():
+    print(f"{student}: {attendance}")
+    
+attendance_values =student_attendance.values()
+print(sum(attendance_values) / len(attendance_values))
