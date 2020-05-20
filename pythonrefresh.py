@@ -256,7 +256,7 @@ def apply(*args, operator):
     print(1, 4, 5, 6, operator="+")
    """  
     
-##unpacking keywords arguments
+""" ##unpacking keywords arguments
 
 def named(**kwargs):#this function collects named arguments into a dictionary where dic. keys = names of args
     print(kwargs)
@@ -270,3 +270,58 @@ def named(name, age):
 details = {"name": "Mohammed", "age": 25}
 
 named(**details)
+
+#nicely function...
+
+#doing both *args, ***args, **kwargs ,kwargs=keyword arguments
+
+def both (*args, **kwargs):
+    print(args)
+    print(kwargs)
+    
+print(1, 3, 6, name="Mohd", age= 25) #positional arguments"1, 3, 6, " while be collected into args and named argument "name="Mohd", age= 25" will be collected into kwargs
+  """
+##OOP in Python
+
+""" class Student:
+    def __init__(self):#a function inside class is called method
+        self.name = "Rolf"
+        self.grades = (30, 60, 40, 44,)
+        
+    def average(self):
+        return sum(self.grades)/len(self.grades)
+    
+student = Student()#the object is created by __init__ method
+print(Student.average(student))
+ """
+#to be cont...
+        
+        
+##Magic methods __str__ & __repr__
+
+
+##@classmethod and @staticmethod
+
+#to be cont...
+#use if u want a method that does not use the class or the instance use static
+#use if u want a method that use the class use classmethod
+#use if u want a method that use the object/instance/self then use the instance method
+
+
+##Class inhertance
+
+#....
+
+##Composition
+
+#.....
+
+##Type hinting in python 3.5+
+
+from typing import List
+
+def list_avg(sequence) :
+    return sum(sequence) / len(sequence)
+
+
+list_avg([1, 3, 6])
